@@ -123,3 +123,13 @@ extension String {
     }
 
 }
+
+extension URL {
+    func isImage() -> Bool {
+        let imageExtensions = ["png", "jpg", "gif", "jpeg", "bmp", "webp"]
+        if imageExtensions.contains(pathExtension.lowercased()) {
+            return true
+        }
+        return false
+    }
+}

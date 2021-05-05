@@ -314,7 +314,7 @@ extension SwiftLinkPreview {
 
         }
 
-        if url.absoluteString.isImage() {
+        if url.isImage() {
             var result = response
 
             result.title = ""
